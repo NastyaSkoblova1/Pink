@@ -1,0 +1,52 @@
+.application { 
+    background: @text-color;  
+    padding: 30px 20px; 
+    font-family: @font-family;  
+    color: @white;  
+    
+    &__btn-upload {        
+        font-size: @font-size--title; 
+        padding: 15px 30px;  
+        margin-bottom: 30px; 
+        font-weight: @font-weight--bold;  
+        display: block; 
+        color: @white;    
+        text-align: center;    
+        border: 3px solid @white; 
+        border-radius: 30px; 
+        text-decoration: none;  
+    } 
+    
+    &__text { 
+       font-size: @font-size; 
+        font-weight: @font-weight--light;  
+        text-align: center; 
+    }   
+    
+    &__images {  
+       margin-bottom: 20px; 
+       padding-left: 30px; 
+    } 
+    
+    &__images-item {  
+       display: inline-block;  
+        vertical-align: bottom;  
+        margin-right: 30px;      
+        width: 54px; 
+        height: 57px;     
+       background: url("../img/apple.png") no-repeat 0 0; 
+    }  
+    
+    &__images-item:nth-child(2) { 
+       background: url("../img/android.png") no-repeat 0 0; 
+        width: 46px; 
+        height: 46px; 
+    }  
+    
+    &__images-item:last-child { 
+       background: url("../img/microsoft.png") no-repeat 0 0; 
+        width: 46px; 
+        margin-right: 0;  
+        height: 46px; 
+    } 
+}         
