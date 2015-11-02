@@ -1,126 +1,359 @@
-<!DOCTYPE html> 
-<html>    
-  <head>  
-    <meta charset="utf-8"> 
-    <link href="css/style.css" rel="stylesheet">    
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="styles/normalize.css" rel="stylesheet"> 
-    <title>Pink</title>
-  </head> 
-  <body>  
-    <div class="wrapper">  
-      <header class="main-header"> 
-       <div class="navbar"> 
-        <h1 class="navbar__logo"><img src="img/logo-first.png" class="navbar__logo-image" alt="Logo"></h1>  
-        <div class="navbar__toggle">
-          <a href="#" class="btn navbar__btn-toggle"></a>
-        </div>
-       </div>                 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Блог</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-              <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
-          </ul>
-        </nav>   
-        <div class="first-title">Взгляните на жизнь иначе!</div>      
-      </header>   
-      <div class="container"> 
-        <div class="application">
-          <a href="#" class="btn application__btn-upload">Скачать приложение</a>  
-          <div class="application__images">
-            <i class="application__images-item"></i>
-            <i class="application__images-item"></i>
-            <i class="application__images-item"></i> 
-          </div>   
-          <p class="application__text">Доступно для iPhone, iPad, Android, 
-            Windows Phone, OS X, Windows 8</p>
-        </div>  
-        <div class="advertisement">
-            <div class="second-title">Устали от серости мегаполиса?</div>     
-            <div class="second-title">Нам есть, что вам предложить!</div>    
-        </div>
-        <section class="features">
-          <div class="features__item">
-            <h2 class="features__item-title">Поднимает настроение</h2>
-            <p class="features__item-text">Приложение позволит вам победить 
-              осеннюю хандру и депрессию 
-              буквально в несколько кликов!</p>
-          </div>    
-          <div class="features__item">
-            <h2 class="features__item-title">Меняет мир вокруг</h2>
-            <p class="features__item-text">Сделайте снимок и украсьте его 
-              смайликом или текстовой подписью, 
-              чтобы усилить эффект</p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__item-title">Заводит новых друзей</h2>
-            <p class="features__item-text">Ставьте лайки, комментируйте, делитесь 
-              фотографиями сдрузьями и заводите 
-              новых</p>
-          </div>
-          <img src="img/phone.png" class="features__image" alt="Telephone">
-        </section>
-        <section class="feedback">
-          <h2 class="feedback__header">Николай Петров</h2>
-          <p class="feedback__text">"Это приложение перевернуло мой мир<br> 
-            и позволило по новому взглянуть на<br> 
-            привычные серые вещи! А ещё я<br> 
-            познакомился со своей будущей женой<br> 
-            в комментариях к выложенной<br> 
-            фотографии!"</p> 
-            <div class="slider__paginator">
-                <span class="slider__paginator-item slider__paginator-item--active slider__paginator-item--first"></span>
-                <span class="slider__paginator-item"></span>
-                <span class="slider__paginator-item"></span>
-            </div>
-        </section>
-        <section class="varieties">
-          <table class="table-varieties">
-            <tr>
-              <th class="table-varieties__header">
-                <div class="table-varieties__header-variant">Стандарт</div>
-                <div class="table-varieties__header-price">3,99 USD</div>
-              </th>     
-            </tr>
-            <tr>
-              <td class="table-varieties__feature">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="table-varieties__feature">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="table-varieties__feature table-varieties__feature-cross">Комментарии</td>
-            </tr>
-          </table> 
-          <div class="slider__paginator">
-            <span class="slider__paginator-item slider__paginator-item--first"></span>
-            <span class="slider__paginator-item slider__paginator-item--active"></span> 
-            <span class="slider__paginator-item"></span>    
-          </div>
-        </section>
-        <div class="contacts">
-          <div class="contacts__title">
-              <div class="second-title">Остались вопросы?<br>
-                 Свяжитесь с нами!</div>    
-          </div>
-          <div class="contacts__connection">
-            <h2 class="contacts__connection-title">Звоните:</h2>
-            <span class="contacts__connection-link">+7 (812) 555-66-66</span>
-          </div>
-          <div class="contacts__connection">
-            <h2 class="contacts__connection-title">Пишите:</h2>
-            <span class="contacts__connection-link">mail@htmlacademy.ru</span>
-          </div>
-          <div class="contacts__connection">
-            <h2 class="contacts__connection-title">Приезжайте в гости:</h2>
-            <span class="contacts__connection-link">ул. Большая<br> 
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<title>Pink</title>
+</head>
+
+<body>
+	<header class="main-header-image">
+		<div class="navbar row">
+			<div class="container">
+				<a class="navbar__logo-link">
+					<img src="img/logotype-white-mobile.svg" class="navbar__logo navbar__logo--s" width="75" height="30" alt="Logo">
+					<img src="img/logotype-white-desktop.svg" class="navbar__logo navbar__logo--l" width="154" height="45" alt="Logo">
+					<img src="img/logotype-white-tablet.svg" class="navbar__logo navbar__logo--m" width="154" height="45" alt="Logo">
+				</a>
+				<nav class="main-nav-large">
+					<ul class="main-nav-large__list">
+						<li class="main-nav-large__item"><a href="#" class="main-nav-large__link">Информация</a></li>
+						<li class="main-nav-large__item"><a href="#" class="main-nav-large__link">Блог</a></li>
+						<li class="main-nav-large__item"><a href="#" class="main-nav-large__link">Отзывы</a></li>
+						<li class="main-nav-large__item"><a href="#" class="main-nav-large__link">Конкурс</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__toggle"> 
+					<a href="" class="toggler" id="toggler"><span></span></a>
+				</div>
+			</div>
+		</div>
+		<nav class="main-nav">
+			<div class="main-nav__item-navbar row"> 
+		      <div class="main-nav__logo row">
+				<img src="img/logotype-white-tablet.svg" class="main-nav__logo-image main-nav__logo--m" width="154" height="45" alt="Logo">
+				<img src="img/logotype-white-mobile.svg" class="main-nav__logo-image main-nav__logo--s" width="75" height="30" alt="Logo"> 
+	          </div>   
+		      <a class="main-nav__close row">
+		        <img src="img/menu-cross.svg" class="main-nav__close-image" width="30px" height="30" alt="Close">
+		      </a>     
+			</div>
+			<ul class="main-nav__list row">
+				<li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+				<li class="main-nav__item"><a href="#" class="main-nav__link">Блог</a></li>
+				<li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+				<li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+			</ul>
+		</nav>
+		<div class="intro">
+			<div class="container">
+				<div class="first-title first-title-image row">Взгляните на жизнь иначе!</div>
+			</div>
+			<div class="application row">
+				<div class="application__container">
+					<a href="#" class="btn application__btn-upload">Скачать приложение</a>
+					<div class="application__images">
+						<i class="application__images-item"></i>
+						<i class="application__images-item"></i>
+						<i class="application__images-item"></i>
+					</div>
+					<p class="application__text">Доступно для iPhone, iPad, Android,
+						<br> Windows Phone, OS X, Windows 8</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<div class="advertisement row">
+			<div class="container">
+				<div class="second-title">Устали от серости мегаполиса?</div>
+				<div class="second-title second-title--l">Нам есть, что вам предложить!</div>
+			</div>
+		</div>
+		<section class="features row"> 
+            <svg class="features__triangle" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+               x="0px" y="0px" width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074"
+               xml:space="preserve"  preserveAspectRatio="none">
+               <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+            </svg>
+			<div class="container">  
+				<div class="features__items">
+					<div class="features__item">
+						<h2 class="features__item-title">Поднимает настроение</h2>
+						<p class="features__item-text">Приложение позволит вам 
+						победить осеннюю хандру и депрессию буквально 
+						в несколько кликов!</p>
+					</div>
+					<div class="features__item">
+						<h2 class="features__item-title">Меняет мир вокруг</h2>
+						<p class="features__item-text">Сделайте снимок и украсьте 
+						его смайликом или текстовой подписью, чтобы 
+						усилить эффект</p>
+					</div>
+					<div class="features__item">
+						<h2 class="features__item-title">Заводит новых друзей</h2>
+						<p class="features__item-text">Ставьте лайки, комментируйте, 
+						делитесь фотографиями сдрузьями и заводите новых
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="research row">
+			<div class="container">
+				<div class="research__item">
+					<h2 class="research__title">Эффект на 24 часа!</h2>
+					<p class="research__text">Британские учёные провели исследования
+					 и доказали, что положительный эффект от 
+					 использования приложения длится целые сутки!</p>
+					<a href="#" class="research__link">Узнать больше об исследовании</a>
+				</div>
+			</div>
+		</section>
+		<section class="feedback row">
+			<div class="container"> 
+		      <ul class="bxslider">
+				<li class="feedback__slide">
+					<h2 class="feedback__header">Николай Петров</h2>
+					<i class="feedback__slider feedback__slider--prev"></i>
+					<p class="feedback__text"><span class="feedback__text-quotes">"</span> Это приложение 
+					перевернуло мой мир и позволило по новому взглянуть 
+					на привычные серые вещи! А ещё я познакомился со своей 
+					будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback__text-quotes">"</span></p>
+					<i class="feedback__slider feedback__slider--next"></i>
+					<div class="feedback__item">26 лет, водитель трамвая</div>
+				</li>
+				<li class="feedback__slide">
+					<h2 class="feedback__header">Николай Петров</h2>
+					<i class="feedback__slider feedback__slider--prev"></i>
+					<p class="feedback__text"><span class="feedback__text-quotes">"</span> Это приложение 
+					перевернуло мой мир и позволило по новому взглянуть 
+					на привычные серые вещи! А ещё я познакомился со своей 
+					будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback__text-quotes">"</span></p>
+					<i class="feedback__slider feedback__slider--next"></i>
+					<div class="feedback__item">26 лет, водитель трамвая</div>
+				</li>
+				<li class="feedback__slide">
+					<h2 class="feedback__header">Николай Петров</h2>
+					<i class="feedback__slider feedback__slider--prev"></i>
+					<p class="feedback__text"><span class="feedback__text-quotes">"</span> Это приложение 
+					перевернуло мой мир и позволило по новому взглянуть 
+					на привычные серые вещи! А ещё я познакомился со своей 
+					будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback__text-quotes">"</span></p>
+					<i class="feedback__slider feedback__slider--next"></i>
+					<div class="feedback__item">26 лет, водитель трамвая</div>
+				</li> 
+		      </ul>      
+			</div>
+		</section>
+		<section class="feedback-changed row">
+			<div class="container">
+				<i class="icon-quotes"></i>      
+		     <ul class="bxslider">
+				<li class="feedback-changed__slide">
+					<p class="feedback-changed__text"><span class="feedback-changed__text-quotes">"</span>
+					 Это приложение перевернуло мой мир и позволило по новому 
+					 взглянуть на привычные серые вещи! А ещё я познакомился 
+					 со своей будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback-changed__text-quotes">"</span></p>
+					<div class="feedback-changed__header">Николай Попов</div>
+					<div class="feedback-changed__item">26 лет, водитель трамвая</div>
+				</li>
+				<li class="feedback-changed__slide">
+					<p class="feedback-changed__text"><span class="feedback-changed__text-quotes">"</span>
+					 Это приложение перевернуло мой мир и позволило по новому 
+					 взглянуть на привычные серые вещи! А ещё я познакомился 
+					 со своей будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback-changed__text-quotes">"</span></p>
+					<div class="feedback-changed__header">Николай Попов</div>
+					<div class="feedback-changed__item">26 лет, водитель трамвая</div>
+				</li>
+				<li class="feedback-changed__slide">
+					<p class="feedback-changed__text"><span class="feedback-changed__text-quotes">"</span> 
+					Это приложение перевернуло мой мир и позволило по новому 
+					взглянуть на привычные серые вещи! А ещё я познакомился 
+					со своей будущей женой в комментариях к выложенной фотографии!
+						<span class="feedback-changed__text-quotes">"</span></p>
+					<div class="feedback-changed__header">Николай Попов</div>
+					<div class="feedback-changed__item">26 лет, водитель трамвая</div>
+				</li> 
+	          </ul>       
+			</div>
+		</section>
+		<section class="varieties-slider row"> 
+            <svg class="varieties-slider__triangle" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074"
+            xml:space="preserve" preserveAspectRatio="none">
+            <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+            </svg>
+			<div class="container">
+				<div class="table-varieties-slider">  
+			      <ul class="bxslider">
+					<li class="table-varieties-slider__slide">
+						<div class="table-varieties-slider__header">
+							<div class="table-varieties-slider__header-variant">База</div>
+							<div class="table-varieties-slider__header-price">1,99 USD</div>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Розовый фильтр</div>
+							<i class="icon-available icon-available--check"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Смайлики</div>
+							<i class="icon-available icon-available--cross"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Комментарии</div>
+							<i class="icon-available icon-available--cross"></i>
+						</div>
+					</li>
+					<li class="table-varieties-slider__slide">
+						<div class="table-varieties-slider__header">
+							<div class="table-varieties-slider__header-variant">Стандарт</div>
+							<div class="table-varieties-slider__header-price">3,99 USD</div>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Розовый фильтр</div>
+							<i class="icon-available icon-available--check"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Смайлики</div>
+							<i class="icon-available icon-available--cross"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Комментарии</div>
+							<i class="icon-available icon-available--cross"></i>
+						</div>
+					</li>
+					<li class="table-varieties-slider__slide">
+						<div class="table-varieties-slider__header">
+							<div class="table-varieties-slider__header-variant">Анлим</div>
+							<div class="table-varieties-slider__header-price">9,99 USD</div>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Розовый фильтр</div>
+							<i class="icon-available icon-available--check"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Смайлики</div>
+							<i class="icon-available icon-available--check"></i>
+						</div>
+						<div class="table-varieties-slider__feature">
+							<div class="table-varieties-slider__feature-item">Комментарии</div>
+							<i class="icon-available icon-available--cross"></i>
+						</div>
+					</li> 
+		          </ul>       
+				</div>    
+			</div>
+		</section>
+		<section class="varieties row"> 
+	        <svg class="varieties__triangle" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	        x="0px" y="0px" width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074"
+	        xml:space="preserve" preserveAspectRatio="none">
+            <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+            </svg>    
+			<div class="container">
+				<table class="table-varieties">
+					<tr>
+						<th class="table-varieties__header--transparent"></th>
+						<th class="table-varieties__header">
+							<div class="table-varieties__header-variant">База</div>
+							<div class="table-varieties__header-price">1,99 USD</div>
+						</th>
+						<th class="table-varieties__header">
+							<div class="table-varieties__header-variant">Стандарт</div>
+							<div class="table-varieties__header-price">3,99 USD</div>
+						</th>
+						<th class="table-varieties__header">
+							<div class="table-varieties__header-variant">Анлим</div>
+							<div class="table-varieties__header-price">9,99 USD</div>
+						</th>
+					</tr>
+					<tr>
+						<td class="table-varieties__feature-item">Розовый фильтр</td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+					</tr>
+					<tr>
+						<td class="table-varieties__feature-item">Смайлики</td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--cross"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+					</tr>
+					<tr>
+						<td class="table-varieties__feature-item">Комментарии</td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--cross"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--cross"></i></td>
+						<td class="table-varieties__feature"><i class="icon-available icon-available--check"></i></td>
+					</tr>
+				</table>
+				<div class="slider__paginator">
+					<a href="#" class="slider__paginator-item slider__paginator-item--first"></a>
+					<span class="slider__paginator-item slider__paginator-item--active"></span>
+					<a href="#" class="slider__paginator-item"></a>
+				</div>
+			</div>
+		</section>
+		<div class="contacts row">
+			<div class="container">
+				<div class="contacts__title">
+					<div class="second-title">Остались вопросы?
+						<br> Свяжитесь с нами!</div>
+				</div>
+				<div class="contacts__connection">
+					<h2 class="contacts__connection-title">Звоните:</h2>
+					<span class="contacts__connection-link">+7 (812) 555-66-66</span>
+				</div>
+				<div class="contacts__connection">
+					<h2 class="contacts__connection-title">Пишите:</h2>
+					<span class="contacts__connection-link">mail@htmlacademy.ru</span>
+				</div>
+				<div class="contacts__connection">
+					<h2 class="contacts__connection-title">Приезжайте в гости:</h2>
+					<span class="contacts__connection-link">ул. Большая<br> 
                Конюшенная, 19/8</span>
-          </div> 
-        </div>    
-        <div class="navigation"></div>  
-      </div>    
-   </div>   
-  </body>
+				</div>
+			</div>
+			<svg class="contacts__triangle" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
+				<polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 " />
+			</svg>
+		</div>
+		<div class="navigation row" id="navigation">
+		</div>
+	</div>
+	<footer class="main-footer-absolute">
+		<div class="container">
+			<div class="main-footer-absolute__item logo">
+				<a href="#" class="logo__link">
+					<img src="img/logotype-blue-desktop.svg" class="logo__image logo__image--l" width="154" height="45" alt="Logotype">
+					<img src="img/logotype-blue-tablet.svg" class="logo__image logo__image--s" width="154" height="45" alt="Logotype">
+				</a>
+			</div>
+			<div class="main-footer-absolute__item social">
+				<a href="#" class="social__btn"><i class="icon-social icon-social--twitter"></i></a>
+				<a href="#" class="social__btn"><i class="icon-social icon-social--facebook"></i></a>
+				<a href="#" class="social__btn"><i class="icon-social icon-social--youtube"></i></a>
+			</div>
+			<div class="main-footer-absolute__item copyright">
+				<div class="copyright__item">
+					<span class="copyright__text">Разработано</span>
+					<a href="#" class="copyright__link"><i class="icon-copyright"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer> 
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>  
+	<script src="js/script.min.js"></script>
+</body>
+
 </html>
